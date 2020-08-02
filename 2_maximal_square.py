@@ -29,6 +29,7 @@ Summary
 We need to find the largest square comprising of all ones in the given m \times nm×n matrix. In other words we need to find the largest set of connected ones in the given matrix that forms a square.
 '''
 
+
 def maximalSquare(matrix):
     # handle 0 and 1 dimensional arrays
     if len(matrix) == 0: return 0
