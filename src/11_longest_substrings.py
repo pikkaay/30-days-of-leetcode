@@ -9,27 +9,68 @@ Explanation: The answer is "wke", with the length of 3.
 '''
 
 
-S = 'abcqabcdbb'
+# s = 'pwwkew'
+
+# ht = set()
+
+# start_index = 0
+# current_pointer = 1
+# length = 1
+
+
+# ht.add(s[start_index])
+# for i in range(1, len(s)):
+# 	print(ht)
+
+# 	if s[i] in ht:
+# 		print('remve add')
+# 		ht.remove(s[i])
+# 		ht.add(s[i])
+# 	else:
+# 		print('add')
+# 		ht.add(s[i])
+	
+# 	if len(ht) > length:
+# 		length = len(ht)
+
+
+
+
+
+
+# print(s)
+# print(ht)
+# print(length)
+
+
+'''
+
+'''
+
+
+
+s = 'pwwkew'
 
 ht = set()
 
-start_index = 0
-current_pointer = 1
+a = 0
+b = 0
 length = 1
 
-
-ht.add(S[start_index])
-for i in range(1, len(S)):
-	if S[i] in ht:
-		ht.remove(S[i])
-		ht.add(S[i])
+while b < len(s):
+	if not s[b] in ht:
+		print('adding', s[b])
+		ht.add(s[b])
+		b += 1
+		length = max(len(ht), length)
 	else:
-		ht.add(S[i])
-	
-	if len(ht) > length:
-		length = len(ht)
+		print('remving and adding ', s[a])
+		ht.remove(s[a])
+		b += 1
+		a += 1
+		
 
 
-print(S)
+print(s)
 print(ht)
 print(length)
