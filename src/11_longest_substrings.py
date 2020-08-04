@@ -9,7 +9,7 @@ Explanation: The answer is "wke", with the length of 3.
 '''
 
 
-print(length)S = 'abcabcdbb'
+S = 'abcqabcdbb'
 
 ht = set()
 
@@ -32,3 +32,4 @@ for i in range(1, len(S)):
 
 print(S)
 print(ht)
+print(length)
